@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        /* css because the bottom owerrides the top law*/
+        
+        header {
+            /*apply style to header tag*/
+        }
+
+        #id{
+            /*apply to id*/
+        }
+
+        header li {
+            /*apply to li in header*/
+        }
+        .className {
+            /*apply to class name  !! less efficient than id*/
+        }
+
+        ul.classname{
+            /*apply only to classname in ul section*/
+        }
+
+        header > nav > ul > li:nth-child(1){
+            /*apply to first child..and so on*/
+        }
+
+        *{
+            /*apply to everything*/
+        }
+    </style>
 </head>
 <body>
 
@@ -60,7 +92,7 @@
     <p>find everything here <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">developer</a></p>
 
 </form>
-    
+    <!-- ul>li*3 create list with three items -->
 </body>
 </html>
 
