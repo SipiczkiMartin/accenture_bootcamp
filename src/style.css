@@ -56,3 +56,11 @@
             /*apply to first letter of the section of that id*/
         }
     
+
+        /* media querry */
+
+        @media screen {
+            /*don't have a clue why this is here....*/
+        }
+
+        
