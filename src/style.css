@@ -1,0 +1,58 @@
+
+
+        /* css because the bottom owerrides the top law
+            justify-content with display flex to arrange content
+            flex-direction for applying row or column list direction
+            use z-index:number to stack things on top and make them visible
+
+            !!!!use <section> tags for css not just div!!!!!
+
+            if using a div inside another tag use role=""
+            horizontal center with flex: margin 0 auto
+                                        justify content space evenly
+
+            a href works with id's as well a href="#idname" it actualy jumps to that section
+
+        */
+
+        header {
+            /*apply style to header tag*/
+        }
+
+        #id{
+            /*apply to id*/
+        }
+
+        header li {
+            /*apply to li in header*/
+        }
+        .className {
+            /*apply to class name  !! less efficient than id*/
+        }
+
+        ul.classname{
+            /*apply only to classname in ul section*/
+        }
+
+        header > nav > ul > li:nth-child(1){
+            /*apply to first child..and so on*/
+        }
+
+        *{
+            /*apply to everything*/
+        }
+
+        :root{
+            /*for variables  like --primary-color: blue: . . . .
+            then we use it as var(--primary-color)
+            it is called pseudo-class*/
+        }
+
+        li:hover, li:focus{
+            /*apply a color or action while hovering mouse over item also apply focus for tabbing*/
+        }
+
+        li#id::first-letter{
+            /*apply to first letter of the section of that id*/
+        }
+    
