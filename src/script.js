@@ -22,15 +22,35 @@ const martin = {name: 'Martin', age:30}
 const user = {
     firstName: 'MArtin',
     lastName: 'Sipiczki',
-    getName: ()=>{
-        return ${this.firstName} ; //functions as a getter user.getName()
-    }
+    get fullName() {  //getter
+        return `${this.firstName}`;
+      }
 }
 
 console.log(user.firstName); //call with dot 
 
+//CRUD ops
+//Mutable way
+const obj = {
+    a: 1,
+    b:2
+}
+
+const newObj = {...obj,d: 3}; //add with spread op
+const newObj = {...obj, b:4}; //update with spread operator
+
+
+
 //array
-numbers = [1,2,3,4]
+numbers = [1,2,3,4];
+
+numbers.push(10);
+numbers.pop();
+numbers.unshift(0); //add 0 to numbers[0] to the first position
+numbers.shift();//remove from first place
+
+const newArray = [...numbers]; //copy array
+const newArray = {12,...numbers} //add 12 to the beginning of newArray
 
 
 //!!!!!!!!!always use let instead of var because of hoisting
