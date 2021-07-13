@@ -50,8 +50,14 @@ numbers.unshift(0); //add 0 to numbers[0] to the first position
 numbers.shift();//remove from first place
 
 const newArray = [...numbers]; //copy array
-const newArray = {12,...numbers} //add 12 to the beginning of newArray
+const newArray2 = [12,...numbers] //add 12 to the beginning of newArray
 
+numbers[2] //read data
+
+const arr = numbers.slice(0,3); //get 3 data starting with index 0
+                                //without second number all data after index added
+
+//for updating or deleting from an array slice it then put together as needed
 
 //!!!!!!!!!always use let instead of var because of hoisting
 let a = 1;
