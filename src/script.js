@@ -87,8 +87,21 @@ for in
 for of
 */
 
-//unmuttable
+//unmuttable:
 //use map with findelement
+//filter return array of records
+//find return element
+//some check if exists return boolean
+//every check everything exists return boolean
+
+//reduce
+const newAge = users.reduce((p, c) => {
+    if(c.name === 'Virat'){
+        return [...p,{...c, age: 30}]; //show the whole array and change age where name virat
+    }
+
+    return [...p,c]; //return array back if c.name not found
+},[]);
 
 /*problems with js:
     variables can be overwriten because we can define variables with same names
