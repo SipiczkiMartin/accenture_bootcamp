@@ -103,6 +103,59 @@ const newAge = users.reduce((p, c) => {
     return [...p,c]; //return array back if c.name not found
 },[]);
 
+//reduce ((previous,current) => {}, {}-for object, [] -for array, 0-for number)
+
+const groupByGender = users.reduce((p, c) => {
+
+    if(p[c.gender] === undefined) { //if c in p is undefined
+
+        p[c.gender] = [] //create another array
+
+    }
+
+    p[c.gender].push(c); //add c to created array
+
+    return p
+
+}, {});
+
+/* homework
+// {
+//    '10-19': [],
+//    '20-29' : [],
+//    '30-39': [],
+//    '40-49': []
+// }*/
+
+const groupByAgeRange = users.reduce((p, c) => {
+
+    if(c.age >=10 && c.age <=19){
+        if(p[1] === undefined){
+            p[1] = [];
+        }
+        p[1].push(c);
+    }else if(c.age >=20 && c.age <=29){
+        if(p[2] === undefined){
+            p[2] = [];
+        }
+        p[2].push(c);
+    }else if(c.age >=30 && c.age <=39){
+        if(p[3] === undefined){
+            p[3] = [];
+        }
+        p[3].push(c);
+    }else {
+        if(p[4] === undefined){
+            p[4] = [];
+        }
+        p[4].push(c);
+    }
+    return p
+
+}, {});
+
+console.log(groupByGender);
+
 /*problems with js:
     variables can be overwriten because we can define variables with same names
 
