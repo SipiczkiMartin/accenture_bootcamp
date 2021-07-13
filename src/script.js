@@ -78,8 +78,14 @@ const stringname = 'Martin is the best' +
                     'in the world';
 
 
-
-
+/* loops
+for
+while
+dowhile
+foreach
+for in
+for of
+*/
 
 /*problems with js:
     variables can be overwriten because we can define variables with same names
