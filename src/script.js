@@ -87,6 +87,9 @@ for in
 for of
 */
 
+//unmuttable
+//use map with findelement
+
 /*problems with js:
     variables can be overwriten because we can define variables with same names
 
