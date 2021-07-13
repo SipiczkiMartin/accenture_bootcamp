@@ -19,6 +19,16 @@ var exists = true;
 //object
 const martin = {name: 'Martin', age:30}
 
+const user = {
+    firstName: 'MArtin',
+    lastName: 'Sipiczki',
+    getName: ()=>{
+        return ${this.firstName} ; //functions as a getter user.getName()
+    }
+}
+
+console.log(user.firstName); //call with dot 
+
 //array
 numbers = [1,2,3,4]
 
@@ -33,14 +43,16 @@ let a = 1;
 })()
 
 //arrow function
-const add = (a,b) => { //if no curly brackets no return needed it takes it automaticaly
-    return a+b;
-}
+const add = (a,b) => a+b;  
+console.log(add(1,2)); //call it normally
 
 
 //use string literals
 const stringname = 'Martin is the best' +
                     'in the world';
+
+
+
 
 
 /*problems with js:
