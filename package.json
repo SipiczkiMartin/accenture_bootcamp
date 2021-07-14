@@ -1,0 +1,25 @@
+{
+  "name": "react-tutorial",
+  "version": "0.0.1",
+  "description": "react js training ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SipiczkiMartin/accenture_bootcamp.git"
+  },
+  "keywords": [
+    "react",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Martin Sipiczki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SipiczkiMartin/accenture_bootcamp/issues"
+  },
+  "homepage": "https://github.com/SipiczkiMartin/accenture_bootcamp#readme"
+}
