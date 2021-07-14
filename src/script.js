@@ -127,6 +127,16 @@ const groupByGender = users.reduce((p, c) => {
 //    '40-49': []
 // }*/
 
+const groupByGender = users.reduce((p, c) => {
+    const ageGroup = Math.floor(c.age/10)
+    const key = `${ageGroup}0-${ageGroup}9`;
+    if(p[key] === undefined) {
+        p[key] = []
+    }
+    p[key].push(c);
+    return p
+}, {});
+
 const groupByAgeRange = users.reduce((p, c) => {
 
     if(c.age >=10 && c.age <=19){
@@ -155,6 +165,8 @@ const groupByAgeRange = users.reduce((p, c) => {
 }, {});
 
 console.log(groupByGender);
+
+
 
 /*problems with js:
     variables can be overwriten because we can define variables with same names
